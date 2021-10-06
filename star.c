@@ -29,7 +29,6 @@ int main(int argc, char *argv[]){
             }
             else{
                 printSpaces((3*taille)-i);
-                // printTopStars(i*2-1);
                 printStars(i*2-1, '+');
                 printSpaces((3*taille)-i);
                 printf("\n");
@@ -53,7 +52,6 @@ int main(int argc, char *argv[]){
             }
             else{
                 printSpaces((3*taille)-i);
-                // printTopStars(i*2-1);
                 printStars(i*2-1,'+');
                 printSpaces((3*taille)-i);
                 printf("\n");
