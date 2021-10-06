@@ -24,13 +24,11 @@ int main(int argc, char *argv[]){
             if(i==0){
                 printSpaces((3*taille)-i);
                 printf("*");
-                // printSpaces((3*taille)-i);
                 printf("\n");
             }
             else{
                 printSpaces((3*taille)-i);
                 printStars(i*2-1, '+');
-                // printSpaces((3*taille)-i);
                 printf("\n");
             }
         }
@@ -47,13 +45,11 @@ int main(int argc, char *argv[]){
             if(i==0){
                 printSpaces((3*taille)-i);
                 printf("*");
-                // printSpaces((3*taille)-i);
                 printf("\n");
             }
             else{
                 printSpaces((3*taille)-i);
                 printStars(i*2-1,'+');
-                // printSpaces((3*taille)-i);
                 printf("\n");
             }
         }
@@ -108,14 +104,12 @@ void printMiddle(int times, int taille, int totalLength){
     for(i = 1; i < times/2; i++){
         printSpaces(i);
         printReverseStars(totalLength-2-(2*i));
-        // printSpaces(i);
         printf("\n");
     }
 
     for(i; i > 0; i--){
         printSpaces(i);
         printReverseStars(totalLength-2-(2*i));
-        // printSpaces(i);
         printf("\n");
     }
 }
