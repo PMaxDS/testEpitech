@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 void printSpaces(int times);
-void printTopStars(int times);
-void printBottomStars(int times);
+void printStars(int times, char type);
 void printLines(int taille);
 void printMiddle(int times, int taille, int totalLength);
 void printReverseStars(int times);
@@ -30,7 +29,8 @@ int main(int argc, char *argv[]){
             }
             else{
                 printSpaces((3*taille)-i);
-                printTopStars(i*2-1);
+                // printTopStars(i*2-1);
+                printStars(i*2-1, '+');
                 printSpaces((3*taille)-i);
                 printf("\n");
             }
@@ -53,7 +53,8 @@ int main(int argc, char *argv[]){
             }
             else{
                 printSpaces((3*taille)-i);
-                printTopStars(i*2-1);
+                // printTopStars(i*2-1);
+                printStars(i*2-1,'+');
                 printSpaces((3*taille)-i);
                 printf("\n");
             }
@@ -69,20 +70,22 @@ void printSpaces(int times){
     }
 }
 
-void printTopStars(int times){
-    printf("*");
-    for(int i = 0; i < times; i++){
-        printf(" ");
+void printStars(int times, char type){
+    if(type=='+'){
+        printf("*");
+        for(int i = 0; i < times; i++){
+            printf(" ");
+        }
+        printf("*");
     }
-    printf("*");
-}
 
-void printBottomStars(int times){
-    printf("*");
-    for(int i = times; i > 0; i--){
-        printf(" ");
+    if(type=='-'){
+        printf("*");
+        for(int i = times; i > 0; i--){
+            printf(" ");
+        }
+        printf("*");
     }
-    printf("*");
 }
 
 void printReverseStars(int times){
