@@ -50,5 +50,10 @@ int main(int argc, char *argv[]){
         }
     }
 
+    else{
+        printf("Usage: ./star [INT < 1]");
+        return EXIT_SUCCESS;
+    }
+
     return EXIT_SUCCESS;
 }
